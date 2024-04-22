@@ -1,4 +1,4 @@
-import { createResolver } from "nuxt/kit"
+import { createResolver } from 'nuxt/kit'
 
 const { resolve } = createResolver(import.meta.url)
 
@@ -6,9 +6,10 @@ const { resolve } = createResolver(import.meta.url)
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    "@nuxt/content",
-    "@unocss/nuxt",
-    "@nuxtjs/color-mode"
+    '@unocss/nuxt',
+    '@nuxt/eslint',
+    '@nuxt/content',
+    '@nuxtjs/color-mode',
   ],
   colorMode: {
     classSuffix: '',
@@ -20,12 +21,12 @@ export default defineNuxtConfig({
     {
       prefix: '',
       path: resolve('./components/app'),
-      global: true
+      global: true,
     },
     {
       prefix: '',
       path: resolve('./components/docs'),
-      global: true
-    }
+      global: true,
+    },
   ],
 })

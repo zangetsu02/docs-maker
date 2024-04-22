@@ -18,13 +18,19 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.0.0",
-    "@iconify-json/logos": "^1.1.38",
-    "@iconify/json": "^2.2.144",
+    "@antfu/eslint-config": "^2.13.3",
+    "@iconify-json/carbon": "^1.1.31",
+    "@iconify-json/twemoji": "^1.1.15",
+    "@iconify-json/heroicons": "^1.1.15",
     "@nuxt/devtools": "latest",
+    "@nuxt/eslint": "^0.3.6",
     "@nuxtjs/color-mode": "^3.4.0",
+    "@unocss/eslint-config": "^0.59.1",
     "@unocss/nuxt": "^0.59.4",
-    "eslint": "^8.54.0",
-    "sass": "^1.75.0"
+    "eslint": "^9.0.0",
+    "eslint-plugin-format": "^0.1.0",
+    "sass": "^1.75.0",
+    "typescript": "^5.4.5",
+    "vue-tsc": "^2.0.12"
   }
 }
