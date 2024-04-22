@@ -19,8 +19,12 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.0.0",
+    "@iconify-json/logos": "^1.1.38",
+    "@iconify/json": "^2.2.144",
+    "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.4.0",
     "@unocss/nuxt": "^0.59.4",
-    "eslint": "^8.54.0"
+    "eslint": "^8.54.0",
+    "sass": "^1.75.0"
   }
 }
