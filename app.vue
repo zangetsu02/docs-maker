@@ -1,5 +1,19 @@
+<script setup lang="ts">
+import '@unocss/reset/tailwind.css'
+</script>
+
 <template>
-  <div>
+  <AppLayout>
     <NuxtPage />
-  </div>
+  </AppLayout>
 </template>
+
+<style>
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  --uno: bg-primary;
+}
+</style>
