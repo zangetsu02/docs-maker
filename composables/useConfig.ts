@@ -1,4 +1,3 @@
-// eslint-disable-next-line antfu/top-level-function
 export const useDocsMaker = () => {
   const appConfig = computed(() => useAppConfig()?.config || {})
   const { navPageFromPath, navDirFromPath, navKeyFromPath } = useContentHelpers()

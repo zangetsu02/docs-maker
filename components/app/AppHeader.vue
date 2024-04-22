@@ -9,8 +9,14 @@ const hasDialog = computed(() => navigation.value?.length > 1 || navigation.valu
     :class="{ 'has-dialog': hasDialog }"
   >
     <div class="app-container">
-      <div class="section left" />
-      <div class="section center" />
+      <div class="section left">
+        <AppHeaderDialog v-if="hasDialog" />
+        <AppHeaderLogo/>  
+      </div>
+      <div class="section center">
+        <AppHeaderLogo  v-if="hasDialog"/>  
+  
+      </div>
       <div class="section right">
         <ThemeSelector />
       </div>
@@ -21,6 +27,12 @@ const hasDialog = computed(() => navigation.value?.length > 1 || navigation.valu
 <style scoped lang="scss">
 header {
   --uno: sticky z-10 top-0 w-full border-b-1 border-primary bg-primary h-[64px] backdrop-saturate-200 backdrop-blur-20;
+
+ &.has-dialog {
+  .section.left :deep(.navbar-logo) {
+  --uno: hidden;
+  }
+ }
 }
 
 .app-container {
@@ -40,4 +52,6 @@ header {
     --uno: grid-col-span-4 justify-end mr-4;
   }
 }
+
+
 </style>
